@@ -1,0 +1,4 @@
+#node files is ignored by default
+# files prettier should not touch here
+/public/**
+/resources/**
