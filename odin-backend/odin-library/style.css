@@ -167,7 +167,7 @@ body {
 #author-valid,
 #title-valid {
   display: none;
-  position: absolute;
+/*   position: absolute; */
   font-size: 1rem;
   color: var(--red);
   text-shadow: none;
@@ -178,11 +178,31 @@ body {
 #author:invalid,
 #title:invalid {
   border-color: var(--red);
-  margin-bottom: 0.667rem;
-}
+  }
 
 #title:invalid + #title-valid,
 #author:invalid + #author-valid,
 #pages:invalid + #pages-valid {
-  display: flex;
-}
+  display: block;
+  }
+
+  @media only screen and (max-width: 1370px) {
+    .book{
+      width: 97.5vw;
+    }
+    #book-submit-form, #add-book
+    {
+      width: 97.5%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    #book-submit-form
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+     height: auto;
+    }
+  }
