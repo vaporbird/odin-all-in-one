@@ -16,6 +16,7 @@ addBookButton.addEventListener('click', (e) => {
   if (!pages.checkValidity()) {
     pages.focus();
     pages.nextElementSibling.style.display = 'Flex';
+
     isInvalid = true;
   }
   if (!author.checkValidity()) {
